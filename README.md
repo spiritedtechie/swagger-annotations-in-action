@@ -22,3 +22,8 @@ Instructions
 
 Key Points
 ----------
+1. In the web.xml, the SpringContextLoaderListener is used to load JAX-RS resources and providers from the Spring context.
+2. Due to 1. the Swagger resources and providers have to be listed in the applicationContext.xml
+3. The SwaggerJaxrsConfig servlet class uses a BeanConfig to set the Swagger JAX-RS properties and configuration. This could instead be added to the Spring context file.
+4. The CORSFilter is needed if the Swagger UI is on a different server to the API service.
+5. Swagger annotations have been added to the CustomerResource class, and the model classes (Customers, Customer).
