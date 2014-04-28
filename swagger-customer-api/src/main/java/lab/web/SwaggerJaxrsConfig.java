@@ -13,7 +13,7 @@ public class SwaggerJaxrsConfig extends HttpServlet {
         bean.setScan(true);
         bean.setResourcePackage("lab.api");
         // at some point, this should be made dynamically settable/configurable
-        bean.setBasePath("http://swagger-api-server:8080/swagger-jaxrs-customer-service");
+        bean.setBasePath("http://localhost:8080/swagger-jaxrs-customer-service");
         bean.setVersion("1.0");
     }
 
