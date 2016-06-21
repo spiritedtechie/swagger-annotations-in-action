@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @XmlRootElement
-@ApiModel(value = "Customers class")
+@ApiModel(value = "Customers", description = "Model for the customers")
 public class Customers {
 
     private List<Customer> customers = new ArrayList();

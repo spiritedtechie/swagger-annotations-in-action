@@ -5,7 +5,7 @@ import io.swagger.annotations.ApiModel;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
-@ApiModel("Customer class")
+@ApiModel(value = "Customer", description = "Model for the customer")
 public class Customer {
 
     private String id;
