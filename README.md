@@ -1,7 +1,7 @@
 Description
 ===========
 
-This example shows how Swagger annotations can be integrated with JAX-RS and Spring Boot.
+This example shows how Swagger annotations can be integrated with JAX-RS and Spring Boot to generate and serve API specification.
 
 Instructions
 ------------
