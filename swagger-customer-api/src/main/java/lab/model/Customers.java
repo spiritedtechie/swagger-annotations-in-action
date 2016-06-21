@@ -1,19 +1,18 @@
-package lab.domain;
+package lab.model;
 
-import java.util.ArrayList;
-import java.util.List;
+import io.swagger.annotations.ApiModel;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
-
-import com.wordnik.swagger.annotations.ApiModel;
+import java.util.ArrayList;
+import java.util.List;
 
 @XmlRootElement
 @ApiModel(value = "Customers class")
 public class Customers {
 
-    private List<Customer> customers = new ArrayList<Customer>();
+    private List<Customer> customers = new ArrayList();
 
     @XmlElementWrapper(name = "list")
     @XmlElement(name = "customer")

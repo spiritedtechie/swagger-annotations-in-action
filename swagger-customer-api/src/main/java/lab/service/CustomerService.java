@@ -1,14 +1,13 @@
-package lab.api;
+package lab.service;
+
+import lab.model.Customer;
+import lab.model.Customers;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
 
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
-
-import lab.domain.Customer;
-import lab.domain.Customers;
-
-import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Component;
 
 @Component
 @Scope("singleton")

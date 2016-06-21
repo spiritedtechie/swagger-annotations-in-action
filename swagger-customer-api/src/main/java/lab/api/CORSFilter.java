@@ -1,16 +1,14 @@
-package lab.web;
+package lab.api;
 
-import java.io.IOException;
+import org.springframework.stereotype.Component;
 
-import javax.servlet.FilterChain;
-import javax.servlet.FilterConfig;
-import javax.servlet.ServletException;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
+import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 
-@WebFilter(filterName = "CorsFilter", urlPatterns = { "/*" })
+@Component
+@WebFilter(filterName = "CorsFilter", urlPatterns = {"/*"})
 public class CORSFilter implements javax.servlet.Filter {
 
     @Override

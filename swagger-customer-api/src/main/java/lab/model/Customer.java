@@ -1,8 +1,8 @@
-package lab.domain;
+package lab.model;
+
+import io.swagger.annotations.ApiModel;
 
 import javax.xml.bind.annotation.XmlRootElement;
-
-import com.wordnik.swagger.annotations.ApiModel;
 
 @XmlRootElement
 @ApiModel("Customer class")
